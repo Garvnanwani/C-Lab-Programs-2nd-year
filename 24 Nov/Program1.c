@@ -17,7 +17,7 @@ int main()
 {
   char email[30];
   printf("Enter Email id : ");
-  gets(email);
+  fgets(email, sizeof(email), stdin);
   int n = strlen(email);
   int isValid = 1, posAt = -1, posDot = -1;
 
